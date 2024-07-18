@@ -10,58 +10,50 @@ function Projects() {
         <ProjectTile
           title="2FA Attendance System"
           date="2023-2024"
-          tags="HTML, CSS, JavaScrip, PHP, MySQL, C++"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          tags={["HTML", "CSS", "JavaScript", "PHP", "MySQL", "C++", "Python"]}
+          description="Two-factor authentication attendance system using NFC and machine vision."
         />
         <ProjectTile
           title="Let Me Cook"
           date="2023-2024"
-          tags="Flutter, Firebase"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          tags={["Flutter", "Firebase"]}
+          description="Social media application for sharing recipes."
         />
         <ProjectTile
           title="AidLedger"
           date="2024"
-          tags="Ethereum, Truffle, Ganache, Solidity, Django"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          tags={["Ethereum", "Truffle", "Ganache", "Solidity", "Django"]}
+          description="Proposed blockchain-based relief goods distribution tracking system"
         />
         <ProjectTile
           title="Flappy Pet"
           date="2023"
-          tags="Unity, C#"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          tags={["Unity", "C#"]}
+          description="Flappy Bird Clone"
         />
         <ProjectTile
           title="FOXEY"
           date="2022"
-          tags="Unity, C#"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          tags={["Unity", "C#"]}
+          description="2D platformer game."
         />
         <ProjectTile
           title="SHOOT"
           date="2022"
-          tags="Unity, C#"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          tags={["Unity", "C#"]}
+          description="Game like Galaga but endless."
         />
         <ProjectTile
           title="Correct Me"
           date="2022"
-          tags="Unity, C#"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          tags={["Unity", "C#", "Android"]}
+          description="Android spelling quiz game."
         />
         <ProjectTile
           title="QuiZnake Escalade"
           date="2022"
-          tags="Unity, C#"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          tags={["Unity", "C#", "Android"]}
+          description="Snake and ladders inspired quiz game."
         />
       </div>
     </section>

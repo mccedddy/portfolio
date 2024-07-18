@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <section
-      className="flex flex-col justify-center items-center border p-4 flex-grow"
+      className="flex flex-col justify-center items-center p-4 flex-grow"
       id="home"
     >
       <div>

@@ -1,11 +1,56 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-function SkillTile({ text }) {
-  return (
-    <div>
-      <h1 className="border rounded p-2">{text}</h1>
-    </div>
-  );
+const colorMapping = {
+  HTML: "bg-customOrange",
+  CSS: "bg-customBlue",
+  JavaScript: "bg-customYellow",
+  Python: "bg-customBlue-dark",
+  PHP: "bg-customViolet-dark",
+  "C#": "bg-customViolet-light",
+  "C++": "bg-customBlue-dark",
+  ReactJS: "bg-customBlue-light",
+  Flutter: "bg-customBlue",
+  "Tailwind CSS": "bg-customBlue-light",
+  MySQL: "bg-customBlue-dark",
+  Firebase: "bg-customYellow",
+  Git: "bg-customOrange",
+  Unity: "bg-zinc-800",
+  Django: "bg-customGreen",
+  Ganache: "bg-customYellow",
+  Truffle: "bg-customOrange",
+  Ethereum: "bg-slate-600",
+  Solidity: "bg-slate-600",
+  Android: "bg-customGreen",
+};
+
+function SkillTile({ text, type = "skill" }) {
+  const bgColor = colorMapping[text] || "bg-gray-300";
+
+  if (type === "tag") {
+    return (
+      <div>
+        <h1
+          className={`rounded text-xs text-white p-1 font-bold shadow-sm ${bgColor}`}
+        >
+          {text}
+        </h1>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <h1 className={`rounded text-white p-2 font-bold shadow-sm ${bgColor}`}>
+          {text}
+        </h1>
+      </div>
+    );
+  }
 }
+
+SkillTile.propTypes = {
+  text: PropTypes.string.isRequired,
+  type: PropTypes.string,
+};
 
 export default SkillTile;
