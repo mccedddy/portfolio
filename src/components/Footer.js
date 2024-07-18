@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="w-full h-5/6 flex flex-col justify-center items-center p-4 border-2">
-      <h1 className="max-w-xl text-center">
+    <section className="w-full flex flex-col justify-center items-center p-4 border">
+      <h1 className="max-w-5xl text-center">
         This website is made by{" "}
         <a className="font-bold" href="github.com/mccedddy">
           Daniel John Cedric Macallan
@@ -22,7 +22,7 @@ function Footer() {
         </a>
         .
       </h1>
-    </div>
+    </section>
   );
 }
 

@@ -13,7 +13,9 @@ function App() {
         <Home />
       </div>
       <div className="flex-grow">
+        <div className="p-8" id="about"></div>
         <About />
+        <div className="p-8" id="projects"></div>
         <Projects />
         <Footer />
       </div>

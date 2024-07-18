@@ -3,7 +3,7 @@ import SkillTile from "./SkillTile";
 
 function About() {
   return (
-    <div className="w-full flex flex-col justify-center items-center p-4 border-2">
+    <section className="w-full flex flex-col justify-center items-center p-4">
       <h1 className="text-4xl font-bold m-4">ABOUT ME</h1>
       <h1 className="max-w-2xl text-justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -46,7 +46,7 @@ function About() {
           </h1>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

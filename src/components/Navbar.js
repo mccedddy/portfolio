@@ -2,12 +2,12 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="w-full p-4 border-b flex justify-between">
-      <a href="https://www.github.com/mccedddy">C</a>
+    <nav className="w-full p-4 border-b flex justify-between fixed top-0 left-0 bg-white z-10">
+      <a href="#home">C</a>
       <div className="flex gap-4">
-        <button>HOME</button>
-        <button>ABOUT ME</button>
-        <button>PROJECTS</button>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT ME</a>
+        <a href="#projects">PROJECTS</a>
       </div>
     </nav>
   );
