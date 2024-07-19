@@ -17,8 +17,11 @@ h4,
 h5,
 h6,
 p,
-a {
-  color: #ccccdd;
+a,
+ul,
+ol,
+li {
+  color: rgb(203 213 225);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

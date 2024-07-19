@@ -7,9 +7,9 @@ function Home() {
       id="home"
     >
       <div>
-        <h1 className="text-xl">Hi! I'm</h1>
+        <h1 className="text-slate-400 text-xl">Hi! I'm</h1>
         <h1 className="text-4xl font-bold">DANIEL JOHN CEDRIC MACALLAN</h1>
-        <h1 className="text-xl">Web Developer</h1>
+        <h1 className="text-slate-400 text-xl">Web Developer</h1>
       </div>
     </section>
   );

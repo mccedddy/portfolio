@@ -22,6 +22,11 @@ const colorMapping = {
   Ethereum: "bg-slate-600",
   Solidity: "bg-slate-600",
   Android: "bg-customGreen",
+  "VS Code": "bg-customBlue-light",
+  Odoo: "bg-customViolet",
+  Canva: "bg-customViolet",
+  Excel: "bg-customGreen",
+  XML: "bg-customOrange",
 };
 
 function SkillTile({ text, type = "skill" }) {
@@ -30,7 +35,9 @@ function SkillTile({ text, type = "skill" }) {
   if (type === "tag") {
     return (
       <div>
-        <h1 className={`rounded text-xs text-white p-1 font-bold ${bgColor}`}>
+        <h1
+          className={`rounded text-xs text-white p-1 font-bold ${bgColor} hover:-translate-y-1 transition-transform`}
+        >
           {text}
         </h1>
       </div>
