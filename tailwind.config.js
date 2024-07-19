@@ -24,6 +24,12 @@ module.exports = {
           dark: "#7b7fb5",
         },
       },
+      boxShadow: {
+        "light-xs": "0 0px 5px 1px rgba(200, 200, 200, 0.2)",
+        "light-s": "0 0px 5px 2px rgba(200, 200, 200, 0.1)",
+        "light-3xl": "0 0px 20px 3px rgba(200, 200, 200, 0.2)",
+        "light-4xl": "0 0px 50px 1px rgba(200, 200, 200, 0.1)",
+      },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
       },

@@ -30,17 +30,17 @@ function SkillTile({ text, type = "skill" }) {
   if (type === "tag") {
     return (
       <div>
-        <h1
-          className={`rounded text-xs text-white p-1 font-bold shadow-sm ${bgColor}`}
-        >
+        <h1 className={`rounded text-xs text-white p-1 font-bold ${bgColor}`}>
           {text}
         </h1>
       </div>
     );
   } else {
     return (
-      <div>
-        <h1 className={`rounded text-white p-2 font-bold shadow-sm ${bgColor}`}>
+      <div className="hover:-translate-y-1 transition-transform rounded duration-200">
+        <h1
+          className={`rounded text-white p-2 font-bold shadow-light-s ${bgColor}`}
+        >
           {text}
         </h1>
       </div>

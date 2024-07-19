@@ -3,7 +3,7 @@ import SkillTile from "./SkillTile";
 
 function ProjectTile({ image = "Image", title, date, tags, description }) {
   return (
-    <div className="max-w-96 min-w-64 h-96 flex flex-col border border-gray-800 shadow-xl rounded-lg">
+    <div className="max-w-96 min-w-64 h-96 flex flex-col border border-gray-800 shadow-light-s rounded-lg hover:scale-105 transition-transform duration-200">
       <div className="h-full p-2">
         <h1>{image}</h1>
       </div>
