@@ -46,7 +46,7 @@ function SkillTile({ text, type = "skill" }) {
     return (
       <div className="hover:-translate-y-1 transition-transform rounded duration-200">
         <h1
-          className={`rounded text-white p-2 font-bold shadow-light-s ${bgColor}`}
+          className={`text-sm rounded text-white p-2 font-bold shadow-light-s ${bgColor}`}
         >
           {text}
         </h1>

@@ -9,13 +9,13 @@ function Projects() {
       <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-4">
         <ProjectTile
           title="2FA Attendance System"
-          date="2023-2024"
+          date="2023 - 2024"
           tags={["HTML", "CSS", "JavaScript", "PHP", "MySQL", "C++", "Python"]}
           description="Two-factor authentication attendance system using NFC and machine vision."
         />
         <ProjectTile
           title="Let Me Cook"
-          date="2023-2024"
+          date="2023 - 2024"
           tags={["Flutter", "Firebase"]}
           description="Social media application for sharing recipes."
         />

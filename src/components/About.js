@@ -1,7 +1,6 @@
 import React from "react";
 import SkillTile from "./SkillTile";
 import WorkTile from "./WorkTile";
-import SchoolTile from "./SchoolTile";
 
 function About() {
   return (
@@ -15,10 +14,10 @@ function About() {
         embedded systems.
       </h1>
       <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-        <div className="flex flex-col gap-4">
-          <h1 className="text-center text-2xl font-bold">SKILLS</h1>
+        <div className="flex flex-col gap-2">
+          <h1 className="text-center text-2xl font-bold mb-6">SKILLS</h1>
           <h1 className="text-justify text-lg font-bold">LANGUAGES</h1>
-          <div className="flex gap-4 flex-wrap border-b border-slate-600 pb-4">
+          <div className="flex gap-2 flex-wrap border-b border-slate-600 pb-4">
             <SkillTile text="HTML" />
             <SkillTile text="CSS" />
             <SkillTile text="JavaScript" />
@@ -28,7 +27,7 @@ function About() {
             <SkillTile text="C++" />
           </div>
           <h1 className="text-justify text-lg font-bold">DEV TOOLS</h1>
-          <div className="flex gap-4 flex-wrap border-b border-slate-600 pb-4">
+          <div className="flex gap-2 flex-wrap border-b border-slate-600 pb-4">
             <SkillTile text="ReactJS" />
             <SkillTile text="Tailwind CSS" />
             <SkillTile text="Flutter" />
@@ -37,7 +36,7 @@ function About() {
             <SkillTile text="VS Code" />
           </div>
           <h1 className="text-justify text-lg font-bold">DATABASES</h1>
-          <div className="flex gap-4">
+          <div className="flex gap-2">
             <SkillTile text="MySQL" />
             <SkillTile text="Firebase" />
           </div>
@@ -45,6 +44,7 @@ function About() {
         <div className="flex flex-col gap-4">
           <h1 className="text-center text-2xl font-bold">CAREER</h1>
           <WorkTile
+            type="work"
             role="Fullstack Developer Intern"
             company="Achieve Without Borders, Inc."
             date="Aug 2023 - Oct 2023"
@@ -58,6 +58,7 @@ function About() {
             ]}
           />
           <WorkTile
+            type="work"
             role="Digital Marketing Intern"
             company="I-Map Websolutions, Inc."
             date="Aug 2022 - Sept 2022"
@@ -70,21 +71,24 @@ function About() {
           />
 
           <h1 className="text-center text-2xl font-bold mt-4">EDUCATION</h1>
-          <SchoolTile
+          <WorkTile
+            type="school"
             course="Bachelor of Science in Computer Engineering"
             school="Polytechnic University of the Philippines"
             grade="College"
             date="2020 - 2024"
             link="https://www.pup.edu.ph/"
           />
-          <SchoolTile
+          <WorkTile
+            type="school"
             course="Science, Technology, Engineering, & Mathematics"
             school="University of Perpetual Help System DALTA - Molino"
             grade="Senior High School"
             date="2018 - 2020"
             link="https://perpetualdalta.edu.ph/"
           />
-          <SchoolTile
+          <WorkTile
+            type="school"
             school="Divine Jesus Learning Center, Inc."
             grade="Junior High School"
             date="2014 - 2018"
