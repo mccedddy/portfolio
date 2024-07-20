@@ -1,5 +1,4 @@
 import React from "react";
-import Skill from "./Skill";
 import WorkTile from "./WorkTile";
 
 function About() {
@@ -13,7 +12,7 @@ function About() {
         have a background in game development using Unity and in designing
         embedded systems.
       </h1>
-      <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+      <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         <div className="flex flex-col gap-4">
           <h1 className="text-center text-xl font-bold">CAREER</h1>
           <WorkTile
@@ -68,51 +67,6 @@ function About() {
             date="2014 - 2018"
             link="https://www.djlcinc.edu.ph/"
           />
-        </div>
-      </div>
-      <h1 className="text-center text-xl font-bold mb-6">SKILLS</h1>
-      <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-        <div>
-          <h1 className="text-justify text-lg font-bold mb-4">LANGUAGES</h1>
-          <div className="flex gap-2 flex-wrap pb-4 mb-2">
-            <Skill text="HTML" />
-            <Skill text="CSS" />
-            <Skill text="JavaScript" />
-            <Skill text="Python" />
-            <Skill text="PHP" />
-            <Skill text="C#" />
-            <Skill text="C++" />
-            <Skill text="C++" />
-            <Skill text="C++" />
-          </div>
-        </div>
-        <div>
-          <h1 className="text-justify text-lg font-bold mb-4">
-            FRAMEWORKS AND LIBRARIES
-          </h1>
-          <div className="flex gap-2 flex-wrap pb-4 mb-2">
-            <Skill text="ReactJS" />
-            <Skill text="Tailwind CSS" />
-            <Skill text="Flutter" />
-          </div>
-        </div>
-        <div>
-          <h1 className="text-justify text-lg font-bold mb-4">TOOLS</h1>
-          <div className="flex gap-2 flex-wrap pb-4 mb-2">
-            <Skill text="Git" />
-            <Skill text="VS Code" />
-            <Skill text="ChatGPT" />
-            <Skill text="Figma" />
-            <Skill text="Canva" />
-            <Skill text="Unity" />
-          </div>
-        </div>
-        <div>
-          <h1 className="text-justify text-lg font-bold mb-4">DATABASES</h1>
-          <div className="flex gap-2">
-            <Skill text="MySQL" />
-            <Skill text="Firebase" />
-          </div>
         </div>
       </div>
     </section>

@@ -18,6 +18,12 @@ function Navbar() {
           ABOUT ME
         </a>
         <a
+          href="#skills"
+          className="hover:-translate-y-1 transition-transform hover:text-customViolet-light"
+        >
+          SKILLS
+        </a>
+        <a
           href="#projects"
           className="hover:-translate-y-1 transition-transform hover:text-customYellow"
         >

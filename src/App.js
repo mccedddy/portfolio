@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import "@fontsource/inter/400.css";
@@ -19,6 +20,8 @@ function App() {
       <div className="flex-grow">
         <div className="p-8" id="about"></div>
         <About />
+        <div className="p-8" id="skills"></div>
+        <Skills />
         <div className="p-8" id="projects"></div>
         <Projects />
         <div className="p-4"></div>
