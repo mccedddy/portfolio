@@ -1,5 +1,5 @@
 import React from "react";
-import SkillTile from "./SkillTile";
+import Skill from "./Skill";
 
 function ProjectTile({
   image = "https://via.placeholder.com/150",
@@ -22,12 +22,12 @@ function ProjectTile({
           <h1 className="font-bold text-lg">{title}</h1>
           <h1 className="text-xs text-slate-400">{date}</h1>
         </div>
+        <h1 className="text-sm text-slate-400 text-justify">{description}</h1>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
-            <SkillTile key={index} text={tag} type="tag" />
+            <Skill key={index} text={tag} type="tag" />
           ))}
         </div>
-        <h1 className="text-sm text-slate-400 text-justify">{description}</h1>
       </div>
     </div>
   );

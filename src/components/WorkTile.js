@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SkillTile from "./SkillTile";
+import Skill from "./Skill";
 
 function WorkTile({
   role,
@@ -38,7 +38,7 @@ function WorkTile({
           </ul>
           <div className="flex flex-wrap gap-2 mt-2">
             {tags.map((tag, index) => (
-              <SkillTile key={index} text={tag} type="tag" />
+              <Skill key={index} text={tag} type="tag" />
             ))}
           </div>
         </div>

@@ -31,7 +31,7 @@ const colorMapping = {
   Figma: "bg-customOrange",
 };
 
-function SkillTile({ text, type = "skill" }) {
+function Skill({ text, type = "skill" }) {
   const bgColor = colorMapping[text] || "bg-gray-300";
 
   if (type === "tag") {
@@ -57,9 +57,9 @@ function SkillTile({ text, type = "skill" }) {
   }
 }
 
-SkillTile.propTypes = {
+Skill.propTypes = {
   text: PropTypes.string.isRequired,
   type: PropTypes.string,
 };
 
-export default SkillTile;
+export default Skill;
