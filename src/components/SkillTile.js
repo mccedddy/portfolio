@@ -27,6 +27,8 @@ const colorMapping = {
   Canva: "bg-customViolet",
   Excel: "bg-customGreen",
   XML: "bg-customOrange",
+  ChatGPT: "bg-zinc-800",
+  Figma: "bg-customOrange",
 };
 
 function SkillTile({ text, type = "skill" }) {

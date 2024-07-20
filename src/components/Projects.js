@@ -11,7 +11,7 @@ function Projects() {
           title="2FA Attendance System"
           date="2023 - 2024"
           tags={["HTML", "CSS", "JavaScript", "PHP", "MySQL", "C++", "Python"]}
-          description="Two-factor authentication attendance system using NFC and machine vision."
+          description="2FA attendance system using NFC and machine vision."
         />
         <ProjectTile
           title="Let Me Cook"
@@ -23,13 +23,13 @@ function Projects() {
           title="AidLedger"
           date="2024"
           tags={["Ethereum", "Truffle", "Ganache", "Solidity", "Django"]}
-          description="Proposed blockchain-based relief goods distribution tracking system"
+          description="Ethereum-based relief goods tracking system."
         />
         <ProjectTile
           title="Flappy Pet"
           date="2023"
           tags={["Unity", "C#"]}
-          description="Flappy Bird Clone"
+          description="Flappy Bird clone."
         />
         <ProjectTile
           title="FOXEY"
