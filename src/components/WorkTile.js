@@ -15,16 +15,21 @@ function WorkTile({
   type,
 }) {
   return (
-    <div className="flex flex-col p-4 hover:bg-customDark hover:border border-slate-800 hover:shadow-light-s rounded-lg hover:scale-105 transition-transform duration-200">
+    <div className="flex flex-col p-4 hover:bg-tile rounded-lg hover:scale-105 transition-transform duration-200">
       {type === "work" ? (
         <div>
           <div className="flex flex-col">
             <h1 className="text-lg font-bold">{role}</h1>
             <div className="flex flex-wrap justify-between items-center">
-              <a href={link} className="text-sm italic mb-1 hover:underline">
+              <a
+                href={link}
+                className="text-sm text-textColor italic mb-1 hover:underline"
+              >
                 {company}
               </a>
-              <h1 className="text-xs text-slate-400">{date}</h1>
+              <h1 className="text-xs text-textColor-dark text-slate-400">
+                {date}
+              </h1>
             </div>
           </div>
 
@@ -32,7 +37,7 @@ function WorkTile({
           <ul className="text-sm pt-2 pl-4 list-disc">
             {work.map((item, index) => (
               <li key={index}>
-                <h1 className="text-slate-400">{item}</h1>
+                <h1 className="text-textColor">{item}</h1>
               </li>
             ))}
           </ul>
@@ -50,12 +55,12 @@ function WorkTile({
               <a href={link} className="text-sm italic mb-1 hover:underline">
                 {grade}
               </a>
-              <h1 className="text-xs text-slate-400">{date}</h1>
+              <h1 className="text-xs text-textColor-dark">{date}</h1>
             </div>
           </div>
 
           <div className="w-full pt-2 border-b border-slate-600"></div>
-          <h1 className="text-slate-400 text-sm pt-2">{course}</h1>
+          <h1 className="text-textColor text-sm pt-2">{course}</h1>
         </div>
       )}
     </div>

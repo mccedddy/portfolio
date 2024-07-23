@@ -5,7 +5,7 @@ function About() {
   return (
     <section className="w-full flex flex-col justify-center items-center p-4">
       <h1 className="text-4xl font-bold m-4">ABOUT ME</h1>
-      <h1 className="max-w-2xl text-slate-400 text-justify">
+      <h1 className="max-w-2xl text-textColor text-justify">
         I am a fresh graduate computer engineer specializing in website and web
         application development. I have expertise in both front-end and back-end
         development, with experience in SQL and NoSQL databases. Additionally, I

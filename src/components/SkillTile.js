@@ -4,7 +4,7 @@ import Tag from "./Tag";
 
 function SkillTile({ heading, skills }) {
   return (
-    <div className="flex flex-col p-4 hover:bg-customDark hover:border border-slate-800 hover:shadow-light-s rounded-lg hover:scale-105 transition-transform duration-200">
+    <div className="flex flex-col p-4 hover:bg-tile rounded-lg hover:scale-105 transition-transform duration-200">
       <div>
         <div className="flex flex-col">
           <h1 className="text-lg font-bold">{heading}</h1>

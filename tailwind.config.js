@@ -4,9 +4,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customDark: "#181233",
-        customDarker: "#0a061c",
-        customDarkest: "#090517",
+        dark: "#0e162d",
+        darker: "#0c1325",
+        darkest: "#0b1120",
+        light: "#0f172a",
+
+        accentBlue: {
+          DEFAULT: "#0ea5e9",
+          light: "#38bdf8",
+        },
+
+        tile: {
+          DEFAULT: "#1e293b",
+          light: "#334155",
+        },
+
+        textColor: {
+          DEFAULT: "#8f9eb3",
+          light: "#cad4e0",
+          dark: "#64748b",
+        },
 
         customOrange: "#f05539",
         customYellow: "#eba32b",

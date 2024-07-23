@@ -2,30 +2,26 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="w-full p-4 border-b border-gray-800 flex justify-between fixed top-0 left-0 bg-customDarkest z-10">
-      <a href="#home">C</a>
+    <nav className="w-full p-4 flex justify-between absolute" id="home">
+      <a href="#home" className="text-textColor">
+        C
+      </a>
       <div className="flex gap-4">
         <a
-          href="#home"
-          className="hover:-translate-y-1 transition-transform hover:text-customOrange"
-        >
-          HOME
-        </a>
-        <a
           href="#about"
-          className="hover:-translate-y-1 transition-transform hover:text-customBlue"
+          className="hover:-translate-y-1 transition-transform text-textColor hover:text-customBlue"
         >
           ABOUT ME
         </a>
         <a
           href="#skills"
-          className="hover:-translate-y-1 transition-transform hover:text-customViolet-light"
+          className="hover:-translate-y-1 transition-transform text-textColor hover:text-customViolet-light"
         >
           SKILLS
         </a>
         <a
           href="#projects"
-          className="hover:-translate-y-1 transition-transform hover:text-customYellow"
+          className="hover:-translate-y-1 transition-transform text-textColor hover:text-customYellow"
         >
           PROJECTS
         </a>

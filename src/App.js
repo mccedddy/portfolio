@@ -18,11 +18,11 @@ function App() {
         <Home />
       </div>
       <div className="flex-grow">
-        <div className="p-8" id="about"></div>
+        <div id="about"></div>
         <About />
-        <div className="p-8" id="skills"></div>
+        <div id="skills"></div>
         <Skills />
-        <div className="p-8" id="projects"></div>
+        <div id="projects"></div>
         <Projects />
         <div className="p-4"></div>
         <Footer />
