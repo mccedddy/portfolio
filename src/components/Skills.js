@@ -16,7 +16,15 @@ function About() {
         />
         <SkillTile
           heading="TOOLS"
-          skills={["VS Code", "Git", "ChatGPT", "Figma", "Canva", "Unity"]}
+          skills={[
+            "VS Code",
+            "Git",
+            "GitHub",
+            "ChatGPT",
+            "Figma",
+            "Canva",
+            "Unity",
+          ]}
         />
         <SkillTile heading="DATABASE" skills={["MySQL", "Firebase"]} />
       </div>

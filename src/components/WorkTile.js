@@ -36,7 +36,7 @@ function WorkTile({
               </li>
             ))}
           </ul>
-          <div className="flex flex-wrap gap-2 mt-2">
+          <div className="flex flex-wrap gap-2 mt-2 pl-4">
             {tags.map((tag, index) => (
               <Tag key={index} text={tag} type="tag" />
             ))}

@@ -9,7 +9,7 @@ function ProjectTile({
   description,
 }) {
   return (
-    <div className="max-w-96 min-w-64 max-h-96 flex flex-col border border-slate-800 hover:shadow-light-s rounded-lg hover:scale-105 transition-transform duration-200">
+    <div className="max-w-96 min-w-64 max-h-96 flex flex-col border border-slate-800 hover:cursor-pointer hover:shadow-light-s rounded-lg hover:scale-105 transition-transform duration-200">
       <div className="h-64 w-full">
         <img
           src={image}

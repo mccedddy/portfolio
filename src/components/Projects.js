@@ -41,19 +41,19 @@ function Projects() {
           title="SHOOT"
           date="2022"
           tags={["Unity", "C#"]}
-          description="Game like Galaga but endless."
+          description="An endless space shooter game."
         />
         <ProjectTile
           title="Correct Me"
           date="2022"
           tags={["Unity", "C#", "Android"]}
-          description="Android spelling quiz game."
+          description="A spelling quiz game."
         />
         <ProjectTile
           title="QuiZnake Escalade"
           date="2022"
           tags={["Unity", "C#", "Android"]}
-          description="Snake and ladders inspired quiz game."
+          description="A board/quiz game inspired by Snakes and Ladders."
         />
       </div>
     </section>

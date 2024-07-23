@@ -21,7 +21,7 @@ function About() {
             company="Achieve Without Borders, Inc."
             date="Aug 2023 - Oct 2023"
             link="https://achievewithoutborders.com/"
-            tags={["Odoo", "Python", "XML", "Flutter", "Git"]}
+            tags={["Odoo", "Python", "Flutter", "Git"]}
             work={[
               "Developed custom module for Odoo V16 and conducted benchmark tests.",
               "Followed Scrum methodology.",
@@ -35,7 +35,7 @@ function About() {
             company="I-Map Websolutions, Inc."
             date="Aug 2022 - Sept 2022"
             link="https://www.imapwebsolutions.com/"
-            tags={["Canva", "Excel"]}
+            tags={["Canva"]}
             work={[
               "Created publication materials for an e-commerce platform.",
               "Managed company files to ensure smooth business operations.",

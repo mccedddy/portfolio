@@ -39,7 +39,14 @@ function Footer() {
         >
           Inter
         </a>{" "}
-        typeface.
+        typeface. All icons are from{" "}
+        <a
+          className="text-slate-400 hover:text-customGreen"
+          href="https://devicon.dev/"
+        >
+          devicon.dev
+        </a>
+        .
       </h1>
     </section>
   );

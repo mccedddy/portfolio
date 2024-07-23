@@ -1,4 +1,5 @@
 import React from "react";
+import IconsGrid from "./IconsGrid";
 
 function Home() {
   return (
@@ -10,6 +11,8 @@ function Home() {
         <h1 className="text-slate-400 text-xl">Hi! I'm</h1>
         <h1 className="text-4xl font-bold">DANIEL JOHN CEDRIC MACALLAN</h1>
         <h1 className="text-slate-400 text-xl">Web Developer</h1>
+
+        {/* <IconsGrid /> */}
       </div>
     </section>
   );

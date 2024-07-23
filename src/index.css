@@ -4,10 +4,32 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #0a061c; /* Dark background */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+
+  background: radial-gradient(
+      circle at 35% 10%,
+      rgba(9, 5, 23, 0.8),
+      transparent 70%
+    ),
+    radial-gradient(circle at 85% 32%, rgba(24, 18, 51, 0.8), transparent 50%),
+    radial-gradient(circle at 88% 86%, rgba(10, 6, 28, 0.8), transparent 40%),
+    radial-gradient(circle at 58% 56%, rgba(18, 16, 51, 0.8), transparent 40%),
+    radial-gradient(circle at 24% 92%, rgba(9, 5, 23, 0.8), transparent 50%),
+    radial-gradient(circle at 11% 44%, rgba(10, 6, 28, 0.8), transparent 40%),
+    radial-gradient(circle at 37% 62%, rgba(24, 18, 51, 0.8), transparent 50%),
+    radial-gradient(circle at 59% 21%, rgba(18, 16, 51, 0.8), transparent 40%),
+    radial-gradient(circle at 52% 97%, rgba(10, 6, 28, 0.8), transparent 50%),
+    linear-gradient(rgba(24, 18, 51, 0.2) 1px, transparent 1px),
+    linear-gradient(to right, rgba(24, 18, 51, 0.2) 1px, transparent 1px);
+
+  background-size: cover, cover, cover, cover, cover, cover, cover, cover, cover,
+    20px 20px, 20px 20px;
+  background-color: #130b36;
+  background-attachment: fixed;
+  background-blend-mode: normal, normal, normal, normal, normal, normal, normal,
+    normal, normal, multiply, multiply;
 }
 
 h1,
