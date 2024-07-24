@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 import Tag from "./Tag";
 
-function ProjectTile({
-  image = "https://via.placeholder.com/150",
-  title,
-  date,
-  tags,
-  description,
-  longDescription = "",
-}) {
+function ProjectTile({ title, date, tags, description, longDescription = "" }) {
   const folderName = title.toLowerCase().replace(/\s/g, "");
-  const directory = `../assets/images/${folderName}`;
+
+  let defaultImage;
+
+  try {
+    defaultImage = require(`../assets/images/${folderName}/1.png`);
+  } catch (error) {
+    defaultImage = "https://via.placeholder.com/150";
+  }
 
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
     setModal(!modal);
     console.log(modal);
-    console.log(directory);
   };
 
   return (
@@ -27,7 +26,7 @@ function ProjectTile({
       >
         <div className="h-64 w-full flex justify-center align-center">
           <img
-            src={image}
+            src={defaultImage}
             alt={title}
             className="h-full w-full m-2 pb-2 object-cover rounded"
           />
@@ -60,7 +59,7 @@ function ProjectTile({
           >
             <div className="h-full w-full sm:w-96 sm:h-96 flex justify-center align-center">
               <img
-                src={image}
+                src={defaultImage}
                 alt={title}
                 className="h-full w-full object-cover rounded"
               />
