@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <section className="w-full flex flex-col justify-center items-center p-4 border-t border-slate-800">
+    <section className="w-full bg-light flex flex-col justify-center items-center p-4 border-t border-slate-800">
       <h1 className="max-w-5xl text-center text-xs text-textColor">
         This website is made by{" "}
         <a

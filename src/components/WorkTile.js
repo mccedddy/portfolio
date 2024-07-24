@@ -15,7 +15,7 @@ function WorkTile({
   type,
 }) {
   return (
-    <div className="flex flex-col p-4 hover:bg-tile rounded-lg hover:scale-105 transition-transform duration-200">
+    <div className="flex flex-col hover:shadow hover:border-y-2 border-t-tile-light border-b-tile p-4 hover:bg-tile rounded-lg hover:scale-105 transition-transform duration-200">
       {type === "work" ? (
         <div>
           <div className="flex flex-col">

@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.light {
+  position: fixed;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, #111b32 10%, rgba(243, 203, 203, 0) 50%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  z-index: -1;
+}
+
 html {
   scroll-behavior: smooth;
   margin: 0;
@@ -10,10 +20,10 @@ html {
 
   background: linear-gradient(
     135deg,
-    #0f172a 10%,
-    #0e162d 30%,
-    #0c1325 70%,
-    #0b1120 90%
+    #0b1120 20%,
+    #0e162d 40%,
+    #0f172a 60%,
+    #0b1120 80%
   );
   background-attachment: fixed;
   background-size: cover;
@@ -57,4 +67,11 @@ li {
 .no-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+/* Hide light on mobile devices */
+@media (max-width: 768px) {
+  .light {
+    display: none;
+  }
 }
