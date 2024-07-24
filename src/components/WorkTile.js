@@ -50,11 +50,11 @@ function WorkTile({
       ) : (
         <div>
           <div className="flex flex-col">
-            <h1 className="text-lg font-bold">{school}</h1>
+            <a href={link} className="text-lg font-bold hover:underline">
+              {school}
+            </a>
             <div className="flex flex-wrap justify-between items-center">
-              <a href={link} className="text-sm italic mb-1 hover:underline">
-                {grade}
-              </a>
+              <h1 className="text-sm italic mb-1 text-textColor">{grade}</h1>
               <h1 className="text-xs text-textColor-dark">{date}</h1>
             </div>
           </div>
