@@ -14,7 +14,7 @@ function Projects() {
           date="2023 - 2024"
           tags={["HTML", "CSS", "JavaScript", "PHP", "MySQL", "C++", "Python"]}
           description="2FA attendance system using NFC and machine vision."
-          longDescription={`The system utilizes an ESP32 equipped with an RC522 NFC scanner for recording attendance and a Raspberry Pi 4B for facial recognition and attendance verification.\n\nOn the website, admins can register students, manage sections, subjects, and class schedules. Professors can view and manage attendance data as well as generate attendance analytics.\n\nThis project was my undergrad thesis, developed with a team of four. I primarily handled the software development, including front-end using HTML, CSS, and JavaScript, back-end server-side scripting using PHP, handling the MySQL database, coding the ESP32 microcontroller for attendance recording, and coding the Raspberry Pi using Python for facial recognition.`}
+          longDescription={`The system utilizes an ESP32 equipped with an RC522 NFC scanner for recording attendance and a Raspberry Pi 4B for facial recognition and attendance verification.\n\nOn the website, admins can register students, manage sections, subjects, and class schedules. Professors can view and manage attendance data as well as generate attendance analytics.\n\nThis project is my undergraduate thesis, developed with a team of four. I primarily handled the software development, including front-end using HTML, CSS, and JavaScript, back-end server-side scripting using PHP, handling the MySQL database, coding the ESP32 microcontroller for attendance recording, and coding the Raspberry Pi using Python for facial recognition.`}
         />
         <ProjectTile
           title="Let Me Cook"
@@ -28,7 +28,7 @@ function Projects() {
           date="2024"
           tags={["Ethereum", "Truffle", "Ganache", "Solidity", "Django"]}
           description="Ethereum-based relief goods tracking system."
-          longDescription={`An Ethereum-based relief goods distribution tracking system. The relief good data and status are stored on the blockchain to ensure immutability and transparency. The system used Truffle as the development framework, Ganache for the local blockchain network for deployment and testing, Solidity for writing smart contracts, and Django for the development of the web app.\n\nDeveloped by a team of three, my role focused primarily on the blockchain system and smart contract development. I wrote the smart contract that tracks the data and status of relief goods. Additionally, I configured Django to utilize the smart contract for retrieval and adding data to the blockchain.`}
+          longDescription={`An Ethereum-based relief goods distribution tracking system. The relief good data and status are stored on the blockchain to ensure immutability and transparency. The system used Truffle as the development framework, Ganache for the local blockchain network for deployment and testing, Solidity for writing smart contracts, and Django for the development of the web app.\n\nDeveloped by a team of three, my role focused primarily on the blockchain system and smart contract development. I wrote the smart contract that tracks the data and status of relief goods. Additionally, I configured Django to utilize the smart contract for retrieval and addition of data to the blockchain.`}
         />
         <ProjectTile
           title="Flappy Pet"
