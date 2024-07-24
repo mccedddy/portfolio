@@ -7,7 +7,11 @@ function ProjectTile({ title, date, tags, description, longDescription = "" }) {
   let defaultImage;
 
   try {
-    defaultImage = require(`../assets/images/${folderName}/1.png`);
+    try {
+      defaultImage = require(`../assets/images/${folderName}/default.png`);
+    } catch (error) {
+      defaultImage = require(`../assets/images/${folderName}/1.png`);
+    }
   } catch (error) {
     defaultImage = "https://via.placeholder.com/150";
   }
@@ -61,7 +65,7 @@ function ProjectTile({ title, date, tags, description, longDescription = "" }) {
               <img
                 src={defaultImage}
                 alt={title}
-                className="h-full w-full object-cover rounded"
+                className="h-full w-full bg-black object-contain rounded"
               />
             </div>
             <div className="max-w-96">

@@ -8,7 +8,7 @@ function Projects() {
       <h1 className="mb-4 text-textColor">
         Here are a few projects that I've worked on.
       </h1>
-      <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <ProjectTile
           title="2FA Attendance System"
           date="2023 - 2024"
