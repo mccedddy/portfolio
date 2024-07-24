@@ -51,7 +51,7 @@ function ProjectTile({
           onClick={toggleModal}
         >
           <div
-            className="flex flex-col m-4 md:flex-row justify-center gap-4 bg-tile border-2 border-tile border-t-tile-light p-5 rounded-lg shadow-lg"
+            className="flex flex-col m-2 md:flex-row justify-center gap-4 bg-tile border-2 border-tile border-t-tile-light p-5 rounded-lg shadow-lg"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="h-full w-full sm:w-96 sm:h-96 flex justify-center align-center">
