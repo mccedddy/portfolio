@@ -9,10 +9,14 @@ function ProjectTile({
   description,
   longDescription = "",
 }) {
+  const folderName = title.toLowerCase().replace(/\s/g, "");
+  const directory = `../assets/images/${folderName}`;
+
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
     setModal(!modal);
     console.log(modal);
+    console.log(directory);
   };
 
   return (
