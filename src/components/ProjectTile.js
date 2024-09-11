@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import Tag from "./Tag";
 
-function ProjectTile({ title, date, tags, description, longDescription = "" }) {
+function ProjectTile({
+  title,
+  date,
+  tags,
+  description,
+  longDescription = "",
+  link = "",
+}) {
   const folderName = title.toLowerCase().replace(/\s/g, "");
 
   let defaultImage;
@@ -77,10 +84,23 @@ function ProjectTile({ title, date, tags, description, longDescription = "" }) {
                 {description}
               </h1>
               <div className="border-b border-gray-600 mb-2"></div>
-              <h1 className="text-xs text-textColor text-justify whitespace-pre-wrap mb-4">
+              <h1 className="text-xs text-textColor text-justify whitespace-pre-wrap mb-4 ">
                 {longDescription}
               </h1>
-              <div className="flex flex-wrap gap-2">
+              {link !== "" ? (
+                <div className="flex gap-2">
+                  <h1 className="text-sm text-textColor">Visit:</h1>
+                  <a
+                    href={link}
+                    className="text-sm text-textColor hover:text-textColor-light hover:underline"
+                  >
+                    {title}
+                  </a>
+                </div>
+              ) : (
+                <></>
+              )}
+              <div className="flex flex-wrap gap-2 mt-4">
                 {tags.map((tag, index) => (
                   <Tag key={index} text={tag} type="tag" />
                 ))}

@@ -10,6 +10,14 @@ function Projects() {
       </h1>
       <div className="w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <ProjectTile
+          title="My Wallet"
+          date="2024"
+          tags={["HTML", "ReactJS", "Tailwind CSS", "Firebase"]}
+          description="My Wallet is a web application for tracking wallets. "
+          longDescription={`My Wallet is a web application designed to help users track their wallets more efficiently. Users can create multiple wallets and record their values, enabling them to track the growth of their wallets or bank accounts over time. The application features a graph for visualizing growth, providing a clear and intuitive way to monitor financial progress.\n\nI developed My Wallet for personal use because I used to record my financial data in a simple notepad. This new method is not only more efficient but also a significantly more effective solution for financial tracking and management.`}
+          link="https://mccedddy-my-wallet.web.app/"
+        />
+        <ProjectTile
           title="2FA Attendance System"
           date="2023 - 2024"
           tags={["HTML", "CSS", "JavaScript", "PHP", "MySQL", "C++", "Python"]}
