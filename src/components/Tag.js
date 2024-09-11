@@ -27,6 +27,8 @@ import OdooIcon from "../assets/icons/odoo.svg";
 import CanvaIcon from "../assets/icons/canva.svg";
 import ChatGPTIcon from "../assets/icons/chatgpt.svg";
 import FigmaIcon from "../assets/icons/figma.svg";
+import GMailIcon from "../assets/icons/gmail.svg";
+import LinkedInIcon from "../assets/icons/linkedin.svg";
 
 const skillMapping = {
   HTML: { color: "bg-customOrange", icon: HTMLIcon },
@@ -55,9 +57,11 @@ const skillMapping = {
   Canva: { color: "bg-customBlue-light", icon: CanvaIcon },
   ChatGPT: { color: "bg-gray-600", icon: ChatGPTIcon },
   Figma: { color: "bg-customOrange", icon: FigmaIcon },
+  Gmail: { color: "bg-customOrange", icon: GMailIcon },
+  LinkedIn: { color: "bg-customBlue", icon: LinkedInIcon },
 };
 
-function Skill({ text, type = "skill" }) {
+function Skill({ text, type = "skill", home = false }) {
   const [isHovered, setIsHovered] = useState(false);
   const skill = skillMapping[text] || {
     color: "bg-gray-300",
@@ -75,7 +79,9 @@ function Skill({ text, type = "skill" }) {
         className="relative"
       >
         <img
-          className="h-6 w-6 hover:-translate-y-1 transition-transform"
+          className={`hover:-translate-y-1 transition-transform ${
+            home ? "h-8 w-8" : "h-6 w-6"
+          }`}
           src={skill.icon}
           alt={text}
         />
