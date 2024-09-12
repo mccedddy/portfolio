@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import WorkTile from "./WorkTile";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <section className="w-full flex flex-col justify-center items-center p-4">
+    <section
+      className="w-full flex flex-col justify-center items-center p-4"
+      data-aos="fade-up"
+    >
       <h1 className="text-4xl font-bold m-4">ABOUT ME</h1>
       <h1 className="max-w-2xl text-textColor text-justify">
         I am a fresh graduate computer engineer specializing in website and web
@@ -13,7 +24,7 @@ function About() {
         embedded systems.
       </h1>
       <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4" data-aos="fade-up">
           <h1 className="text-center text-xl font-bold">CAREER</h1>
           <WorkTile
             type="work"
@@ -42,7 +53,7 @@ function About() {
             ]}
           />
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4" data-aos="fade-up">
           <h1 className="text-center text-xl font-bold">EDUCATION</h1>
           <WorkTile
             type="school"
