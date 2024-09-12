@@ -17,11 +17,11 @@ function About() {
     >
       <h1 className="text-4xl font-bold m-4">ABOUT ME</h1>
       <h1 className="max-w-2xl text-textColor text-justify">
-        I am a fresh graduate computer engineer specializing in website and web
-        application development. I have expertise in both front-end and back-end
-        development, with experience in SQL and NoSQL databases. Additionally, I
-        have a background in game development using Unity and in designing
-        embedded systems.
+        I am a fresh graduate computer engineer specializing in web development.
+        I have worked in both front-end and back-end development, with
+        experience in SQL and NoSQL databases. I also have experience in game
+        development and have successfully developed several games for both
+        desktop and mobile.
       </h1>
       <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         <div className="flex flex-col gap-4" data-aos="fade-up">
