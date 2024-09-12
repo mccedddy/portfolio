@@ -17,7 +17,7 @@ function About() {
     >
       <h1 className="text-4xl font-bold m-4">SKILLS</h1>
       <h1 className="mb-4 text-textColor">
-        Here are my skills and technologeis that I use.
+        These are the technologies that I work with.
       </h1>
       <div
         className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6"
