@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9141b015.css",
-    "main.js": "/portfolio/static/js/main.0e1b1269.js",
+    "main.css": "/portfolio/static/css/main.d0b17009.css",
+    "main.js": "/portfolio/static/js/main.3343f171.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/default.png": "/portfolio/static/media/default.ff301c69e6e633719b58.png",
     "static/media/1.png": "/portfolio/static/media/1.99b251060e3603dee6c4.png",
@@ -69,7 +69,10 @@
     "static/media/mysql.svg": "/portfolio/static/media/mysql.3a412e55d83e4a2ade814401410aba68.svg",
     "static/media/reactjs.svg": "/portfolio/static/media/reactjs.2a20fd294352dbfcde3a473baf770f3a.svg",
     "static/media/python.svg": "/portfolio/static/media/python.e05f003b724a9089e40386e6df1190c1.svg",
-    "static/media/github.svg": "/portfolio/static/media/github.6fbbd1c5dc312e9f15eb2bd753c4edc6.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.b690868ef0ab833cfefd1fccfa7d23d5.svg",
+    "static/media/linkedinDark.svg": "/portfolio/static/media/linkedinDark.93dda4aaff9cd0bf4b1c8c82ae8f1722.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.f59e0ea2ba9f37b32a0c11942c4b90a2.svg",
+    "static/media/githubDark.svg": "/portfolio/static/media/githubDark.a00994a5edd1b15d5fbe4d554469a349.svg",
     "static/media/chatgpt.svg": "/portfolio/static/media/chatgpt.689b0a43a215147a6ece49517020cad5.svg",
     "static/media/android.svg": "/portfolio/static/media/android.e598c30c34287a9ccdde125ab8aaa41d.svg",
     "static/media/firebase.svg": "/portfolio/static/media/firebase.15a9e58624904d88286ed4e8b681bb6f.svg",
@@ -83,17 +86,19 @@
     "static/media/css.svg": "/portfolio/static/media/css.defcd2d2480b9a060f8f6abf75cda679.svg",
     "static/media/git.svg": "/portfolio/static/media/git.76843345d6da9ff2eeeaf20f316ec62e.svg",
     "static/media/tailwindcss.svg": "/portfolio/static/media/tailwindcss.34863ab6d16029ec6a78e5b0798f1043.svg",
+    "static/media/gmail.svg": "/portfolio/static/media/gmail.c403e499ae4a92fa52f9d5c00b72ee25.svg",
+    "static/media/gmailDark.svg": "/portfolio/static/media/gmailDark.3253a60a2c33746c5dfb215a04f350c0.svg",
     "static/media/flutter.svg": "/portfolio/static/media/flutter.e7754c5f14026255b0a6cf93ea55d1ca.svg",
     "static/media/django.svg": "/portfolio/static/media/django.2b831220fa32b4c915ce60c4ec6d0516.svg",
     "static/media/html.svg": "/portfolio/static/media/html.f5b105f7674ac3df2a330fd54b9de313.svg",
     "static/media/figma.svg": "/portfolio/static/media/figma.0f22443e43968d05d033238a40f403cf.svg",
     "static/media/solidity.svg": "/portfolio/static/media/solidity.ebab08b9725ec8b067e75c0b2ed0d7ca.svg",
-    "main.9141b015.css.map": "/portfolio/static/css/main.9141b015.css.map",
-    "main.0e1b1269.js.map": "/portfolio/static/js/main.0e1b1269.js.map",
+    "main.d0b17009.css.map": "/portfolio/static/css/main.d0b17009.css.map",
+    "main.3343f171.js.map": "/portfolio/static/js/main.3343f171.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9141b015.css",
-    "static/js/main.0e1b1269.js"
+    "static/css/main.d0b17009.css",
+    "static/js/main.3343f171.js"
   ]
 }
