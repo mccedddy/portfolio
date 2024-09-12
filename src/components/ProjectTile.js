@@ -59,23 +59,24 @@ function ProjectTile({
       </div>
 
       {/* modal */}
+      {/* TODO: make modal a separate component */}
       {modal && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
           onClick={toggleModal}
         >
           <div
-            className="flex flex-col m-2 md:flex-row justify-center gap-4 bg-tile border-2 border-tile border-t-tile-light p-5 rounded-lg shadow-lg"
+            className="inline-flex flex-col m-2 md:flex-row lg:flex-row justify-center gap-4 bg-tile border-2 border-tile border-t-tile-light p-5 rounded-lg shadow-lg"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="h-full w-full sm:w-96 sm:h-96 flex justify-center align-center">
+            <div className="h-full w-full lg:w-1/2 md:w-1/2 sm:h-96 flex justify-center align-center">
               <img
                 src={defaultImage}
                 alt={title}
                 className="h-full w-full bg-black object-contain rounded"
               />
             </div>
-            <div className="max-w-96">
+            <div className="w-full lg:w-96 md:w-1/2">
               <div className="flex gap-4 justify-between items-center">
                 <h1 className="font-bold text-lg">{title}</h1>
                 <h1 className="text-xs text-textColor-dark">{date}</h1>

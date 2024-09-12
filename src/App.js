@@ -13,7 +13,6 @@ import "@fontsource/inter/700.css";
 function App() {
   return (
     <div>
-      <div className="light"></div>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <Home />

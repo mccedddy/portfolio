@@ -2,10 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="w-full p-4 flex justify-between absolute" id="home">
-      <a href="#home" className="text-textColor">
-        C
-      </a>
+    <nav className="w-full p-4 flex justify-end absolute" id="home">
       <div className="flex gap-4">
         <a
           href="#about"

@@ -68,10 +68,3 @@ li {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-/* Hide light on mobile devices */
-@media (max-width: 768px) {
-  .light {
-    display: none;
-  }
-}
