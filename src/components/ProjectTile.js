@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Tag from "./Tag";
 
 function ProjectTile({
@@ -8,11 +8,11 @@ function ProjectTile({
   description,
   longDescription = "",
   link = "",
+  toggleModal,
 }) {
   const folderName = title.toLowerCase().replace(/\s/g, "");
 
   let defaultImage;
-
   try {
     try {
       defaultImage = require(`../assets/images/${folderName}/default.png`);
@@ -22,12 +22,6 @@ function ProjectTile({
   } catch (error) {
     defaultImage = "https://via.placeholder.com/150";
   }
-
-  const [modal, setModal] = useState(false);
-  const toggleModal = () => {
-    setModal(!modal);
-    console.log(modal);
-  };
 
   return (
     <>
@@ -57,59 +51,6 @@ function ProjectTile({
           </div>
         </div>
       </div>
-
-      {/* modal */}
-      {/* TODO: make modal a separate component */}
-      {modal && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
-          onClick={toggleModal}
-        >
-          <div
-            className="inline-flex flex-col m-2 md:flex-row lg:flex-row justify-center gap-4 bg-tile border-2 border-tile border-t-tile-light p-5 rounded-lg shadow-lg"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="h-full w-full lg:w-1/2 md:w-1/2 sm:h-96 flex justify-center align-center">
-              <img
-                src={defaultImage}
-                alt={title}
-                className="h-full w-full bg-black object-contain rounded"
-              />
-            </div>
-            <div className="w-full lg:w-96 md:w-1/2">
-              <div className="flex gap-4 justify-between items-center">
-                <h1 className="font-bold text-lg">{title}</h1>
-                <h1 className="text-xs text-textColor-dark">{date}</h1>
-              </div>
-              <h1 className="text-xs text-textColor text-justify mb-2">
-                {description}
-              </h1>
-              <div className="border-b border-gray-600 mb-2"></div>
-              <h1 className="text-xs text-textColor text-justify whitespace-pre-wrap mb-4 ">
-                {longDescription}
-              </h1>
-              {link !== "" ? (
-                <div className="flex gap-2">
-                  <h1 className="text-sm text-textColor">Visit:</h1>
-                  <a
-                    href={link}
-                    className="text-sm text-textColor hover:text-textColor-light hover:underline"
-                  >
-                    {title}
-                  </a>
-                </div>
-              ) : (
-                <></>
-              )}
-              <div className="flex flex-wrap gap-2 mt-4">
-                {tags.map((tag, index) => (
-                  <Tag key={index} text={tag} type="tag" />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 }
