@@ -29,9 +29,14 @@ function ProjectModal({ project, toggleModal }) {
             <h1 className="font-bold text-lg">{title}</h1>
             <h1 className="text-xs text-textColor-dark">{date}</h1>
           </div>
-          <h1 className="text-xs text-textColor text-justify mb-2">
-            {longDescription}
-          </h1>
+          {longDescription.map((paragraph, index) => (
+            <h1
+              key={index}
+              className="text-xs text-textColor text-justify mb-2"
+            >
+              {paragraph}
+            </h1>
+          ))}
           {link && (
             <div className="flex gap-2">
               <h1 className="text-sm text-textColor">Visit:</h1>
