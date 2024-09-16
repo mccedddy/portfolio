@@ -44,6 +44,17 @@
     ]
   },
   {
+    "title": "Random Word Generator",
+    "date": "2024",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "description": "A simple random word generator",
+    "longDescription": [
+      "A web-based tool that generates random words. The words are fetched from an API, and each generated word is automatically copied to the clipboard.",
+      "I created this project to generate random words to use in a macro script I was working on."
+    ],
+    "link": "https://mccedddy.github.io/random-word-generator/"
+  },
+  {
     "title": "Flappy Pet",
     "date": "2023",
     "tags": ["Unity", "C#"],
