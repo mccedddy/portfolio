@@ -12,19 +12,19 @@ function ProjectModal({ project, toggleModal }) {
       onClick={toggleModal}
     >
       <div
-        className="inline-flex flex-col m-2 md:flex-row lg:flex-row justify-center gap-4 bg-tile border-2 border-tile border-t-tile-light p-5 rounded-lg shadow-lg"
+        className="flex w-10/12 flex-col md:flex-row md:w-11/12 lg:flex-row lg:w-2/3 justify-between gap-4 bg-tile border-2 border-tile border-t-tile-light p-5 rounded-lg shadow-lg"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="h-full w-full lg:w-1/2 md:w-1/2 sm:h-96 flex justify-center align-center">
+        <div className="h-full w-full md:w-1/2 lg:w-1/2 flex justify-center align-center">
           <img
-            src={require(`../assets/images/${title
+            src={require(`../assets/projects/${title
               .toLowerCase()
               .replace(/\s/g, "")}/1.png`)}
             alt={title}
-            className="h-full w-full bg-black object-contain rounded"
+            className="h-96 w-full bg-black object-contain rounded"
           />
         </div>
-        <div className="w-full lg:w-96 md:w-1/2">
+        <div className="h-full w-full md:w-1/2 lg:w-1/2 ">
           <div className="flex gap-4 justify-between items-center">
             <h1 className="font-bold text-lg">{title}</h1>
             <h1 className="text-xs text-textColor-dark">{date}</h1>

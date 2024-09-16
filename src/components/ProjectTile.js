@@ -1,23 +1,15 @@
 import React from "react";
 import Tag from "./Tag";
 
-function ProjectTile({
-  title,
-  date,
-  tags,
-  description,
-  longDescription = "",
-  link = "",
-  toggleModal,
-}) {
+function ProjectTile({ title, date, tags, description, toggleModal }) {
   const folderName = title.toLowerCase().replace(/\s/g, "");
 
   let defaultImage;
   try {
     try {
-      defaultImage = require(`../assets/images/${folderName}/default.png`);
+      defaultImage = require(`../assets/projects/${folderName}/default.png`);
     } catch (error) {
-      defaultImage = require(`../assets/images/${folderName}/1.png`);
+      defaultImage = require(`../assets/projects/${folderName}/1.png`);
     }
   } catch (error) {
     defaultImage = "https://via.placeholder.com/150";
