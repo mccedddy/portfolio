@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4ca5b98a.css",
-    "main.js": "/portfolio/static/js/main.c64308e6.js",
+    "main.css": "/portfolio/static/css/main.48bc7fb4.css",
+    "main.js": "/portfolio/static/js/main.ac5451ef.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/default.png": "/portfolio/static/media/default.ff301c69e6e633719b58.png",
     "static/media/1.png": "/portfolio/static/media/1.99b251060e3603dee6c4.png",
@@ -58,7 +58,6 @@
     "static/media/inter-greek-ext-700-normal.woff2": "/portfolio/static/media/inter-greek-ext-700-normal.31161fccc41bc72f7c30.woff2",
     "static/media/ganache.svg": "/portfolio/static/media/ganache.6e8559764484ba079a1fb9a995a633f9.svg",
     "static/media/inter-greek-ext-400-normal.woff2": "/portfolio/static/media/inter-greek-ext-400-normal.1e2b9039d9ecdbea5d80.woff2",
-    "static/media/DJCMTheme.svg": "/portfolio/static/media/DJCMTheme.78ecfa6eb580d34722a761d59e653a0e.svg",
     "static/media/inter-vietnamese-500-normal.woff2": "/portfolio/static/media/inter-vietnamese-500-normal.7e98faddc130d6652757.woff2",
     "static/media/inter-vietnamese-600-normal.woff2": "/portfolio/static/media/inter-vietnamese-600-normal.f5d386a9b66422144df3.woff2",
     "static/media/inter-vietnamese-700-normal.woff2": "/portfolio/static/media/inter-vietnamese-700-normal.20cbef325a3893fe67ad.woff2",
@@ -72,6 +71,7 @@
     "static/media/python.svg": "/portfolio/static/media/python.e05f003b724a9089e40386e6df1190c1.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.b690868ef0ab833cfefd1fccfa7d23d5.svg",
     "static/media/linkedinDark.svg": "/portfolio/static/media/linkedinDark.93dda4aaff9cd0bf4b1c8c82ae8f1722.svg",
+    "static/media/DJCMTheme.svg": "/portfolio/static/media/DJCMTheme.bc5650fe529703252fdfc05f6ca8b0fd.svg",
     "static/media/github.svg": "/portfolio/static/media/github.f59e0ea2ba9f37b32a0c11942c4b90a2.svg",
     "static/media/githubDark.svg": "/portfolio/static/media/githubDark.a00994a5edd1b15d5fbe4d554469a349.svg",
     "static/media/chatgpt.svg": "/portfolio/static/media/chatgpt.689b0a43a215147a6ece49517020cad5.svg",
@@ -94,12 +94,12 @@
     "static/media/html.svg": "/portfolio/static/media/html.f5b105f7674ac3df2a330fd54b9de313.svg",
     "static/media/figma.svg": "/portfolio/static/media/figma.0f22443e43968d05d033238a40f403cf.svg",
     "static/media/solidity.svg": "/portfolio/static/media/solidity.ebab08b9725ec8b067e75c0b2ed0d7ca.svg",
-    "main.4ca5b98a.css.map": "/portfolio/static/css/main.4ca5b98a.css.map",
-    "main.c64308e6.js.map": "/portfolio/static/js/main.c64308e6.js.map",
+    "main.48bc7fb4.css.map": "/portfolio/static/css/main.48bc7fb4.css.map",
+    "main.ac5451ef.js.map": "/portfolio/static/js/main.ac5451ef.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ca5b98a.css",
-    "static/js/main.c64308e6.js"
+    "static/css/main.48bc7fb4.css",
+    "static/js/main.ac5451ef.js"
   ]
 }
