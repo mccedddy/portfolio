@@ -50,9 +50,10 @@ function ProjectModal({ project, toggleModal }) {
       arrows: true,
       pagination: true,
     });
+
     splide.mount();
     return () => splide.destroy();
-  }, [project]);
+  }, []);
 
   const { title, date, tags, longDescription, link } = project;
   const folderName = title.toLowerCase().replace(/\s+/g, "");
