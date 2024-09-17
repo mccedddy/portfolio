@@ -1,10 +1,64 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Tag from "./Tag";
+import Splide from "@splidejs/splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+
+// Import all images for different folders
+const importAllImages = (r) => r.keys().map(r);
+
+const imagesMap = {
+  "2faattendancesystem": importAllImages(
+    require.context("../assets/projects/2faattendancesystem", true, /\.png$/)
+  ),
+  mywallet: importAllImages(
+    require.context("../assets/projects/mywallet", true, /\.png$/)
+  ),
+  aidledger: importAllImages(
+    require.context("../assets/projects/aidledger", true, /\.png$/)
+  ),
+  correctme: importAllImages(
+    require.context("../assets/projects/correctme", true, /\.png$/)
+  ),
+  flappypet: importAllImages(
+    require.context("../assets/projects/flappypet", true, /\.png$/)
+  ),
+  foxey: importAllImages(
+    require.context("../assets/projects/foxey", true, /\.png$/)
+  ),
+  letmecook: importAllImages(
+    require.context("../assets/projects/letmecook", true, /\.png$/)
+  ),
+  quiznakeescalade: importAllImages(
+    require.context("../assets/projects/quiznakeescalade", true, /\.png$/)
+  ),
+  randomwordgenerator: importAllImages(
+    require.context("../assets/projects/randomwordgenerator", true, /\.png$/)
+  ),
+  shoot: importAllImages(
+    require.context("../assets/projects/shoot", true, /\.png$/)
+  ),
+};
 
 function ProjectModal({ project, toggleModal }) {
-  if (!project) return null;
+  // Initialize Splide
+  useEffect(() => {
+    const splide = new Splide("#image-carousel", {
+      type: "loop",
+      perPage: 1,
+      autoplay: true,
+      interval: 3000,
+      arrows: true,
+      pagination: true,
+    });
+    splide.mount();
+    return () => splide.destroy();
+  }, [project]);
 
   const { title, date, tags, longDescription, link } = project;
+  const folderName = title.toLowerCase().replace(/\s+/g, "");
+
+  // Get images from the imagesMap based on folderName
+  const images = imagesMap[folderName] || [];
 
   return (
     <div
@@ -16,15 +70,27 @@ function ProjectModal({ project, toggleModal }) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="h-full w-full md:w-1/2 lg:w-1/2 flex justify-center align-center">
-          <img
-            src={require(`../assets/projects/${title
-              .toLowerCase()
-              .replace(/\s/g, "")}/1.png`)}
-            alt={title}
-            className="h-96 w-full bg-black object-contain rounded"
-          />
+          <section
+            id="image-carousel"
+            className="splide"
+            aria-label="Beautiful Project Images"
+          >
+            <div className="splide__track">
+              <ul className="splide__list">
+                {images.map((image, index) => (
+                  <li key={index} className="splide__slide">
+                    <img
+                      src={image}
+                      alt={`${title} slide ${index + 1}`}
+                      className="w-full h-96 bg-black object-contain rounded"
+                    />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
         </div>
-        <div className="h-full w-full md:w-1/2 lg:w-1/2 ">
+        <div className="h-full w-full md:w-1/2 lg:w-1/2">
           <div className="flex gap-4 justify-between items-center">
             <h1 className="font-bold text-lg">{title}</h1>
             <h1 className="text-xs text-textColor-dark">{date}</h1>
