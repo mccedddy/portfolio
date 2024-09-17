@@ -67,7 +67,7 @@ const skillMapping = {
   LinkedInDark: { color: "bg-customBlue", icon: LinkedInDarkIcon },
 };
 
-function Skill({ text, type = "skill", home = false }) {
+function Tag({ text, type = "skill", home = false }) {
   const [isHovered, setIsHovered] = useState(false);
   const skill = skillMapping[text] || {
     color: "bg-gray-300",
@@ -124,9 +124,9 @@ function Skill({ text, type = "skill", home = false }) {
   }
 }
 
-Skill.propTypes = {
+Tag.propTypes = {
   text: PropTypes.string.isRequired,
   type: PropTypes.string,
 };
 
-export default Skill;
+export default Tag;

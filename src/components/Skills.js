@@ -3,7 +3,7 @@ import SkillTile from "./SkillTile";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function About() {
+function Skills() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -57,4 +57,4 @@ function About() {
   );
 }
 
-export default About;
+export default Skills;

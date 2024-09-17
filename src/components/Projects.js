@@ -20,9 +20,12 @@ function Projects({ toggleModal }) {
       <h1 className="mb-4 text-textColor">
         Here are a few projects that I've worked on.
       </h1>
-      <div className="w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div
+        className="w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        data-aos="fade-up"
+      >
         {projects.map((project, index) => (
-          <div key={index} data-aos="fade-up">
+          <div key={index}>
             <ProjectTile
               {...project}
               toggleModal={() => toggleModal(project)}
