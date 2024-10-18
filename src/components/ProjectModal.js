@@ -7,6 +7,9 @@ import "@splidejs/splide/dist/css/splide.min.css";
 const importAllImages = (r) => r.keys().map(r);
 
 const imagesMap = {
+  portfolio: importAllImages(
+    require.context("../assets/projects/portfolio", true, /\.png$/)
+  ),
   "2faattendancesystem": importAllImages(
     require.context("../assets/projects/2faattendancesystem", true, /\.png$/)
   ),
