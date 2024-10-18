@@ -32,7 +32,7 @@ function Skills() {
         <div data-aos="fade-up">
           <SkillTile
             heading="FRAMEWORKS AND LIBRARIES"
-            skills={["ReactJS", "Tailwind CSS", "Flutter"]}
+            skills={["ReactJS", "Tailwind CSS", "Flutter", "SASS", "Jest"]}
           />
         </div>
         <div data-aos="fade-up">

@@ -1,13 +1,23 @@
 [
   {
+    "title": "Portfolio",
+    "date": "2024",
+    "tags": ["HTML", "ReactJS", "Tailwind CSS"],
+    "description": "My personal portfolio website",
+    "longDescription": [
+      "This is my personal portfolio website where I showcase my skills, experiences, and projects all in one place."
+    ],
+    "link": "https://mccedddy.github.io/portfolio/"
+  },
+  {
     "title": "My Wallet",
     "date": "2024",
     "tags": ["HTML", "ReactJS", "Tailwind CSS", "Firebase"],
-    "description": "My Wallet is a web application for tracking wallets.",
+    "description": "Web app for tracking wallets.",
     "longDescription": [
-      "My Wallet is a web application designed to help users track their wallets more efficiently. Users can create multiple wallets and record their values, enabling them to track the growth of their wallets or bank accounts over time.",
-      "The application features a graph for visualizing growth, providing a clear and intuitive way to monitor financial progress.",
-      "I developed My Wallet for personal use because I used to record my financial data in a simple notepad. This new method is not only more efficient but also a significantly more effective solution for financial tracking and management."
+      "My Wallet is a web application designed to help users track their wallets more efficiently. Users can create multiple wallets, record their values, and see how their wallets grow over time",
+      "It features a graph to visualize financial progress, making tracking easier and more organized.",
+      "I developed \"My Wallet\" for personal use because I wanted to keep track of my financial data efficiently, as I used to rely on a simple notepad for this purpose."
     ],
     "link": "https://mccedddy-my-wallet.web.app/"
   },
@@ -17,8 +27,8 @@
     "tags": ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "C++", "Python"],
     "description": "2FA attendance system using NFC and machine vision.",
     "longDescription": [
-      "The system utilizes an ESP32 equipped with an RC522 NFC scanner for recording attendance and a Raspberry Pi 4B for facial recognition and attendance verification.",
-      "On the website, admins can register students, manage sections, subjects, and class schedules. Professors can view and manage attendance data as well as generate attendance analytics.",
+      "This is a two-factor authentication attendance system that uses NFC and machine vision. It includes an NFC scanner to record attendance and a Raspberry Pi for facial recognition and attendance verification. Admins can register students and manage classes, while professors can view and analyze attendance data.",
+      "Admins can register students, manage sections, subjects, and class schedules while professors can view and analyze attendance data.",
       "This project is my undergraduate thesis, developed with a team of four. I primarily handled the software development, including front-end using HTML, CSS, and JavaScript, back-end server-side scripting using PHP, handling the MySQL database, coding the ESP32 microcontroller for attendance recording, and coding the Raspberry Pi using Python for facial recognition."
     ]
   },
@@ -28,7 +38,7 @@
     "tags": ["Flutter", "Firebase"],
     "description": "Social media application for sharing recipes.",
     "longDescription": [
-      "\"Let Me Cook\" is a social media application designed for sharing recipes. Users can create profiles, post recipes with detailed ingredients and steps, like and comment on posts, bookmark their favorite recipes, and search for people or recipes.",
+      "\"Let Me Cook\" is a social media application designed for sharing recipes. Users can create profiles, post recipes, like and comment on posts, bookmark their favorite recipes, and search for people or other recipes.",
       "The app was developed by a team of four. My role involved handling widget interactions in Flutter, handling database operations, and managing the database structure in Firebase."
     ]
   },
@@ -46,11 +56,11 @@
   {
     "title": "Random Word Generator",
     "date": "2024",
-    "tags": ["HTML", "CSS", "JavaScript"],
+    "tags": ["HTML", "CSS", "JavaScript", "SASS", "Jest"],
     "description": "A simple random word generator",
     "longDescription": [
-      "A web-based tool that generates random words. The words are fetched from an API, and each generated word is automatically copied to the clipboard.",
-      "I created this project to generate random words to use in a macro script I was working on."
+      "This is a simple web-based tool that generates random words. The words are fetched from an API, and each generated word has its definition retrieved from another API. Additionally, each generated word can be automatically copied to the clipboard.",
+      "I created this project to generate random words for a macro script I was working on, and it also served as practice for using APIs, JavaScript testing frameworks, and the CSS pre-processor SASS."
     ],
     "link": "https://mccedddy.github.io/random-word-generator/"
   },

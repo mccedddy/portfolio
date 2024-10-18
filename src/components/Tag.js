@@ -32,6 +32,8 @@ import GmailIcon from "../assets/icons/gmail.svg";
 import GmailDarkIcon from "../assets/icons/gmailDark.svg";
 import LinkedInIcon from "../assets/icons/linkedin.svg";
 import LinkedInDarkIcon from "../assets/icons/linkedinDark.svg";
+import SASSIcon from "../assets/icons/sass.svg";
+import JestIcon from "../assets/icons/jest.svg";
 
 const skillMapping = {
   HTML: { color: "bg-customOrange", icon: HTMLIcon },
@@ -39,7 +41,7 @@ const skillMapping = {
   JavaScript: { color: "bg-customYellow", icon: JavaScriptIcon },
   Python: { color: "bg-customBlue-dark", icon: PythonIcon },
   PHP: { color: "bg-customViolet-dark", icon: PHPIcon },
-  "C#": { color: "bg-customViolet-light", icon: CSharpIcon },
+  "C#": { color: "bg-customViolet", icon: CSharpIcon },
   "C++": { color: "bg-customBlue-dark", icon: CPlusPlusIcon },
   ReactJS: { color: "bg-customBlue-light", icon: ReactJSIcon },
   Flutter: { color: "bg-customBlue-light", icon: FlutterIcon },
@@ -65,6 +67,8 @@ const skillMapping = {
   GmailDark: { color: "bg-customOrange", icon: GmailDarkIcon },
   LinkedIn: { color: "bg-customBlue", icon: LinkedInIcon },
   LinkedInDark: { color: "bg-customBlue", icon: LinkedInDarkIcon },
+  SASS: { color: "bg-customPink", icon: SASSIcon },
+  Jest: { color: "bg-customPink-dark", icon: JestIcon },
 };
 
 function Tag({ text, type = "skill", home = false }) {

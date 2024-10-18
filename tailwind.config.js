@@ -27,7 +27,7 @@ module.exports = {
 
         customOrange: "#f05539",
         customYellow: "#eba32b",
-        customGreen: "#386659",
+        customGreen: "#006400",
 
         customBlue: {
           light: "#0aa7cf",
@@ -37,8 +37,13 @@ module.exports = {
 
         customViolet: {
           light: "#9f73d9",
-          DEFAULT: "#673ec6",
+          DEFAULT: "#9B4F96",
           dark: "#7b7fb5",
+        },
+
+        customPink: {
+          DEFAULT: "#CB6699",
+          dark: "#99425B",
         },
       },
       boxShadow: {
