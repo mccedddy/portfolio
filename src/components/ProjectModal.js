@@ -40,6 +40,12 @@ const imagesMap = {
   shoot: importAllImages(
     require.context("../assets/projects/shoot", true, /\.png$/)
   ),
+  youtubedownloader: importAllImages(
+    require.context("../assets/projects/youtubedownloader", true, /\.png$/)
+  ),
+  youtubemp3downloader: importAllImages(
+    require.context("../assets/projects/youtubemp3downloader", true, /\.png$/)
+  ),
 };
 
 function ProjectModal({ project, toggleModal }) {
@@ -95,7 +101,7 @@ function ProjectModal({ project, toggleModal }) {
           </section>
         </div>
         <div className="h-full w-full md:w-1/2 lg:w-1/2">
-          <div className="flex gap-4 justify-between items-center">
+          <div className="flex gap-4 justify-between items-center mb-1">
             <h1 className="font-bold text-lg">{title}</h1>
             <h1 className="text-xs text-textColor-dark">{date}</h1>
           </div>

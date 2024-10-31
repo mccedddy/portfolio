@@ -1,19 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import HTMLIcon from "../assets/icons/html.svg";
-import CSSIcon from "../assets/icons/css.svg";
-import JavaScriptIcon from "../assets/icons/javascript.svg";
-import PythonIcon from "../assets/icons/python.svg";
-import PHPIcon from "../assets/icons/php.svg";
-import CSharpIcon from "../assets/icons/csharp.svg";
-import CPlusPlusIcon from "../assets/icons/cpp.svg";
-import ReactJSIcon from "../assets/icons/reactjs.svg";
-import FlutterIcon from "../assets/icons/flutter.svg";
-import TailwindIcon from "../assets/icons/tailwindcss.svg";
-import MySQLIcon from "../assets/icons/mysql.svg";
-import FirebaseIcon from "../assets/icons/firebase.svg";
-import GitIcon from "../assets/icons/git.svg";
 import GitHubIcon from "../assets/icons/github.svg";
 import GitHubDarkIcon from "../assets/icons/githubDark.svg";
 import UnityIcon from "../assets/icons/unity.svg";
@@ -22,34 +9,112 @@ import GanacheIcon from "../assets/icons/ganache.svg";
 import TruffleIcon from "../assets/icons/truffle.svg";
 import EthereumIcon from "../assets/icons/ethereum.svg";
 import SolidityIcon from "../assets/icons/solidity.svg";
-import AndroidIcon from "../assets/icons/android.svg";
-import VSCodeIcon from "../assets/icons/vscode.svg";
 import OdooIcon from "../assets/icons/odoo.svg";
-import CanvaIcon from "../assets/icons/canva.svg";
 import ChatGPTIcon from "../assets/icons/chatgpt.svg";
-import FigmaIcon from "../assets/icons/figma.svg";
 import GmailIcon from "../assets/icons/gmail.svg";
 import GmailDarkIcon from "../assets/icons/gmailDark.svg";
 import LinkedInIcon from "../assets/icons/linkedin.svg";
 import LinkedInDarkIcon from "../assets/icons/linkedinDark.svg";
-import SASSIcon from "../assets/icons/sass.svg";
-import JestIcon from "../assets/icons/jest.svg";
+import ExpressIcon from "../assets/icons/express.svg";
 
 const skillMapping = {
-  HTML: { color: "bg-customOrange", icon: HTMLIcon },
-  CSS: { color: "bg-customBlue", icon: CSSIcon },
-  JavaScript: { color: "bg-customYellow", icon: JavaScriptIcon },
-  Python: { color: "bg-customBlue-dark", icon: PythonIcon },
-  PHP: { color: "bg-customViolet-dark", icon: PHPIcon },
-  "C#": { color: "bg-customViolet", icon: CSharpIcon },
-  "C++": { color: "bg-customBlue-dark", icon: CPlusPlusIcon },
-  ReactJS: { color: "bg-customBlue-light", icon: ReactJSIcon },
-  Flutter: { color: "bg-customBlue-light", icon: FlutterIcon },
-  "Tailwind CSS": { color: "bg-customBlue-light", icon: TailwindIcon },
-  MySQL: { color: "bg-customBlue-dark", icon: MySQLIcon },
-  Firebase: { color: "bg-customYellow", icon: FirebaseIcon },
-  Git: { color: "bg-customOrange", icon: GitIcon },
-  GitHub: { color: "bg-gray-600", icon: GitHubIcon },
+  // CDN
+  HTML: {
+    color: "bg-customOrange",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+  },
+  CSS: {
+    color: "bg-customBlue",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+  },
+  JavaScript: {
+    color: "bg-customYellow",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  },
+  Python: {
+    color: "bg-customBlue-dark",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+  },
+  PHP: {
+    color: "bg-customViolet-dark",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+  },
+  "C#": {
+    color: "bg-customViolet",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+  },
+  "C++": {
+    color: "bg-customBlue-dark",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+  },
+  ReactJS: {
+    color: "bg-customBlue-light",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
+  Flutter: {
+    color: "bg-customBlue-light",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+  },
+  "Tailwind CSS": {
+    color: "bg-customBlue-light",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  MySQL: {
+    color: "bg-customBlue-dark",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
+  },
+  Firebase: {
+    color: "bg-customYellow",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg",
+  },
+  Git: {
+    color: "bg-customOrange",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  },
+  GitHub: {
+    color: "bg-gray-600",
+    icon: GitHubIcon,
+  },
+  Android: {
+    color: "bg-customGreen",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain.svg",
+  },
+  "VS Code": {
+    color: "bg-customBlue-light",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+  },
+  Odoo: { color: "bg-customViolet", icon: OdooIcon },
+  Canva: {
+    color: "bg-customBlue-light",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg",
+  },
+  ChatGPT: { color: "bg-gray-600", icon: ChatGPTIcon },
+  Figma: {
+    color: "bg-customOrange",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+  },
+  SASS: {
+    color: "bg-customPink",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+  },
+  Jest: {
+    color: "bg-customPink-dark",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+  },
+  "Node JS": {
+    color: "bg-customGreen",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+  },
+  Bootstrap: {
+    color: "bg-customGreen",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg",
+  },
+
+  // Custom Icons
+  Gmail: { color: "bg-customOrange", icon: GmailIcon },
+  GmailDark: { color: "bg-customOrange", icon: GmailDarkIcon },
+  LinkedIn: { color: "bg-customBlue", icon: LinkedInIcon },
+  LinkedInDark: { color: "bg-customBlue", icon: LinkedInDarkIcon },
   GitHubDark: { color: "bg-gray-600", icon: GitHubDarkIcon },
   Unity: { color: "bg-gray-600", icon: UnityIcon },
   Django: { color: "bg-customGreen", icon: DjangoIcon },
@@ -57,18 +122,7 @@ const skillMapping = {
   Truffle: { color: "bg-customOrange", icon: TruffleIcon },
   Ethereum: { color: "bg-gray-600", icon: EthereumIcon },
   Solidity: { color: "bg-gray-600", icon: SolidityIcon },
-  Android: { color: "bg-customGreen", icon: AndroidIcon },
-  "VS Code": { color: "bg-customBlue-light", icon: VSCodeIcon },
-  Odoo: { color: "bg-customViolet", icon: OdooIcon },
-  Canva: { color: "bg-customBlue-light", icon: CanvaIcon },
-  ChatGPT: { color: "bg-gray-600", icon: ChatGPTIcon },
-  Figma: { color: "bg-customOrange", icon: FigmaIcon },
-  Gmail: { color: "bg-customOrange", icon: GmailIcon },
-  GmailDark: { color: "bg-customOrange", icon: GmailDarkIcon },
-  LinkedIn: { color: "bg-customBlue", icon: LinkedInIcon },
-  LinkedInDark: { color: "bg-customBlue", icon: LinkedInDarkIcon },
-  SASS: { color: "bg-customPink", icon: SASSIcon },
-  Jest: { color: "bg-customPink-dark", icon: JestIcon },
+  Express: { color: "bg-gray-600", icon: ExpressIcon },
 };
 
 function Tag({ text, type = "skill", home = false }) {
