@@ -76,7 +76,7 @@ function ProjectModal({ project, toggleModal }) {
       onClick={toggleModal}
     >
       <div
-        className="flex w-10/12 flex-col md:flex-row md:w-11/12 lg:flex-row lg:w-2/3 justify-between gap-4 bg-tile border-2 border-tile border-t-tile-light p-5 rounded-lg shadow-lg"
+        className="flex h-auto  w-11/12 flex-col md:flex-row md:w-11/12 lg:flex-row lg:w-2/3 justify-between gap-4 bg-tile border-2 border-tile border-t-tile-light p-5 rounded-lg shadow-lg"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="h-full w-full md:w-1/2 lg:w-1/2 flex justify-center align-center">
@@ -105,29 +105,31 @@ function ProjectModal({ project, toggleModal }) {
             <h1 className="font-bold text-lg">{title}</h1>
             <h1 className="text-xs text-textColor-dark">{date}</h1>
           </div>
-          {longDescription.map((paragraph, index) => (
-            <h1
-              key={index}
-              className="text-xs text-textColor text-justify mb-2"
-            >
-              {paragraph}
-            </h1>
-          ))}
-          {link && (
-            <div className="flex gap-2">
-              <h1 className="text-sm text-textColor">Visit:</h1>
-              <a
-                href={link}
-                className="text-sm text-textColor hover:text-textColor-light hover:underline"
-              >
-                {title}
-              </a>
-            </div>
-          )}
-          <div className="flex flex-wrap gap-2 mt-4">
+          <div className="flex flex-wrap gap-2 mt-2 mb-2">
             {tags.map((tag, index) => (
               <Tag key={index} text={tag} type="tag" />
             ))}
+          </div>
+          <div className="overflow-y-auto  max-h-40 md:max-h-full">
+            {longDescription.map((paragraph, index) => (
+              <h1
+                key={index}
+                className="text-xs text-textColor text-justify mb-2"
+              >
+                {paragraph}
+              </h1>
+            ))}
+            {link && (
+              <div className="flex gap-2">
+                <h1 className="text-sm text-textColor">Visit:</h1>
+                <a
+                  href={link}
+                  className="text-sm text-textColor hover:text-textColor-light hover:underline"
+                >
+                  {title}
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>

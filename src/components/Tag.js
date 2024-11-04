@@ -106,7 +106,7 @@ const skillMapping = {
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
   },
   Bootstrap: {
-    color: "bg-customGreen",
+    color: "bg-customBootstrap",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg",
   },
 
@@ -151,7 +151,7 @@ function Tag({ text, type = "skill", home = false }) {
         />
         {isHovered && (
           <div
-            className={`absolute top-full whitespace-nowrap left-1/2 transform -translate-x-1/2 mt-1 p-1 text-white text-xs font-bold rounded ${skill.color}`}
+            className={`absolute top-full z-50 whitespace-nowrap left-1/2 transform -translate-x-1/2 mt-1 p-1 text-white text-xs font-bold rounded ${skill.color}`}
           >
             {text}
           </div>
@@ -172,7 +172,7 @@ function Tag({ text, type = "skill", home = false }) {
         />
         {isHovered && (
           <div
-            className={`absolute top-full whitespace-nowrap left-1/2 transform -translate-x-1/2 mt-1 p-1 text-center text-white text-xs font-bold rounded ${skill.color}`}
+            className={`absolute top-full z-50 whitespace-nowrap left-1/2 transform -translate-x-1/2 mt-1 p-1 text-center text-white text-xs font-bold rounded ${skill.color}`}
           >
             {text}
           </div>

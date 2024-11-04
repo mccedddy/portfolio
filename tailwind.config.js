@@ -45,6 +45,8 @@ module.exports = {
           DEFAULT: "#CB6699",
           dark: "#99425B",
         },
+
+        customBootstrap: "#7411F6",
       },
       boxShadow: {
         "light-xs": "0 0px 5px 1px rgba(200, 200, 200, 0.1)",
