@@ -26,7 +26,16 @@ function Skills() {
         <div data-aos="fade-up">
           <SkillTile
             heading="LANGUAGES"
-            skills={["HTML", "CSS", "JavaScript", "Python", "PHP", "C#", "C++"]}
+            skills={[
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "TypeScript",
+              "Python",
+              "PHP",
+              "C#",
+              "C++",
+            ]}
           />
         </div>
         <div data-aos="fade-up">
@@ -34,6 +43,7 @@ function Skills() {
             heading="FRAMEWORKS AND LIBRARIES"
             skills={[
               "ReactJS",
+              "Redux",
               "Tailwind CSS",
               "SASS",
               "Bootstrap",
@@ -53,6 +63,7 @@ function Skills() {
               "GitHub",
               "ChatGPT",
               "Figma",
+              "Jira",
               "Canva",
               "Unity",
             ]}

@@ -2,7 +2,7 @@
   {
     "title": "My Wallet",
     "date": "2024",
-    "tags": ["HTML", "ReactJS", "Tailwind CSS", "Firebase"],
+    "tags": ["HTML", "ReactJS", "Redux", "Tailwind CSS", "Firebase"],
     "description": "Web app for tracking wallets.",
     "longDescription": [
       "\"My Wallet\" is a web application designed to help users track their wallets more efficiently. Users can create multiple wallets, record their values, and visualize how their wallets grow over time through graph.",
@@ -33,7 +33,15 @@
   {
     "title": "YouTube MP3 Downloader",
     "date": "2024",
-    "tags": ["HTML", "ReactJS", "Bootstrap", "Node JS", "Express"],
+    "tags": [
+      "HTML",
+      "ReactJS",
+      "TypeScript",
+      "Bootstrap",
+      "Node JS",
+      "Express",
+      "Jest"
+    ],
     "description": "Web app for downloading YouTube MP3.",
     "longDescription": [
       "This website is designed to make downloading audio from YouTube videos quick and easy. Users can download YouTube audio files in MP3 format using just YouTube video links. This tool simplifies the process with just a few clicks.",
@@ -54,7 +62,7 @@
   {
     "title": "Random Word Generator",
     "date": "2024",
-    "tags": ["HTML", "CSS", "JavaScript", "SASS", "Jest"],
+    "tags": ["HTML", "CSS", "TypeScript", "SASS", "Jest"],
     "description": "A simple random word generator",
     "longDescription": [
       "This is a simple web-based tool that generates random words. The words are fetched from random word API, and each generated word has its definition retrieved from a definition API. Additionally, each generated word can be automatically copied to the clipboard.",

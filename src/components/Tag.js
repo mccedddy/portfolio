@@ -24,12 +24,16 @@ const skillMapping = {
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
   },
   CSS: {
-    color: "bg-customBlue",
+    color: "bg-customBlue-dark",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
   },
   JavaScript: {
     color: "bg-customYellow",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  },
+  TypeScript: {
+    color: "bg-customBlue-dark",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
   },
   Python: {
     color: "bg-customBlue-dark",
@@ -71,10 +75,6 @@ const skillMapping = {
     color: "bg-customOrange",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
   },
-  GitHub: {
-    color: "bg-gray-600",
-    icon: GitHubIcon,
-  },
   Android: {
     color: "bg-customGreen",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain.svg",
@@ -83,12 +83,10 @@ const skillMapping = {
     color: "bg-customBlue-light",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
   },
-  Odoo: { color: "bg-customViolet", icon: OdooIcon },
   Canva: {
     color: "bg-customBlue-light",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg",
   },
-  ChatGPT: { color: "bg-gray-600", icon: ChatGPTIcon },
   Figma: {
     color: "bg-customOrange",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
@@ -109,8 +107,19 @@ const skillMapping = {
     color: "bg-customBootstrap",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg",
   },
+  Jira: {
+    color: "bg-customBlue",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg",
+  },
+  Redux: {
+    color: "bg-customViolet",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+  },
 
   // Custom Icons
+  GitHub: { color: "bg-gray-600", icon: GitHubIcon },
+  ChatGPT: { color: "bg-gray-600", icon: ChatGPTIcon },
+  Odoo: { color: "bg-customViolet", icon: OdooIcon },
   Gmail: { color: "bg-customOrange", icon: GmailIcon },
   GmailDark: { color: "bg-customOrange", icon: GmailDarkIcon },
   LinkedIn: { color: "bg-customBlue", icon: LinkedInIcon },
