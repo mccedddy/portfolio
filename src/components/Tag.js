@@ -76,8 +76,8 @@ const skillMapping = {
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg",
   },
   "Google Cloud": {
-    color: "bg-customYellow",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg",
+    color: "bg-customBlue-light",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
   },
   Git: {
     color: "bg-customOrange",
