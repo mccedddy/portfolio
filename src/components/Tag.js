@@ -55,6 +55,10 @@ const skillMapping = {
     color: "bg-customBlue-light",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
+  "React Native": {
+    color: "bg-customBlue-light",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
   Flutter: {
     color: "bg-customBlue-light",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
@@ -70,6 +74,10 @@ const skillMapping = {
   Firebase: {
     color: "bg-customYellow",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg",
+  },
+  "Google Cloud": {
+    color: "bg-customYellow",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg",
   },
   Git: {
     color: "bg-customOrange",

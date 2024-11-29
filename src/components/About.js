@@ -29,6 +29,21 @@ function About() {
           <div data-aos="fade-up">
             <WorkTile
               type="work"
+              role="Freelance Mobile App Developer"
+              company="Freelance"
+              date="Nov 2024"
+              tags={["React Native", "Firebase", "Google Cloud", "Git"]}
+              work={[
+                "Developed a React Native mobile app using Expo, implementing key features to enhance user experience for a healthcare application.",
+                "Integrated Firebase Firestore for real-time database functionality and Firebase Auth for secure user authentication.",
+                "Utilized Google Cloud Vertex AI to train and deploy a machine learning model for image classification.",
+                "Collaborated closely with the client to meet specific requirements and ensure functionality aligned with user needs.",
+              ]}
+            />
+          </div>
+          <div data-aos="fade-up">
+            <WorkTile
+              type="work"
               role="Fullstack Developer Intern"
               company="Achieve Without Borders, Inc."
               date="Aug 2023 - Oct 2023"
